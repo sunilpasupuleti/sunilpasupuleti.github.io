@@ -762,6 +762,9 @@ img {
   width: 83%;
 }
 
+.skills__react__native {
+  width: 85%;
+}
 .skills__php {
   width: 80%;
 }
@@ -1323,6 +1326,14 @@ img {
 
 .exp__content:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.certificate__bg.kaspertech {
+  background: url(../img/certificates/kaspertech__bg.jpg);
+}
+
+.certificate__bg.firmdev {
+  background: url(../img/certificates/firm.dev__bg.jpg);
 }
 
 .certificate__bg.urbnmnky {
