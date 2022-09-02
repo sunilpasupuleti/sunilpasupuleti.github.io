@@ -60,7 +60,7 @@ try {
     $mail->setFrom($smtpusername, $smtpfromname);
     $mail->addAddress($to, $toname);     // Add a recipient
     //$mail->addAddress('contact@example.com');               // Name is optional
-    $mail->addReplyTo('sunilpasupuleti@outlook.com', 'Reply mail');
+    $mail->addReplyTo('sunil@webwizard.in', 'Reply mail');
     //$mail->addCC('cc@example.com');
     //$mail->addBCC('bcc@example.com');
 

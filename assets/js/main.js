@@ -530,7 +530,7 @@ async function sendMessage(e) {
     subject: "Reply from WebWizard",
     message:
       "<h3>Thanks for spending your valuable time by going through my portfolio . Thank you for contacting me 😊 ! I will reach you out soon 😉 ! Any emergencey you can contact me at +91995990740 </h3>",
-    adminemail: "sunil.pandvd22@gmail.com",
+    adminemail: "sunil@webwizard.in",
     adminsubject: "Message from your portfolio",
     adminmessage: `
       <h3>Someone contacted you ! Details are</h3>
