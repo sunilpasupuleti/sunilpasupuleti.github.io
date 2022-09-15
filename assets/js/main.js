@@ -539,6 +539,12 @@ const theme__colors = document.querySelectorAll(".theme__color");
 theme__colors.forEach((theme) => {
   theme.addEventListener("click", () => {
     document.documentElement.style.setProperty("--hue-color", theme.id);
+    document
+      .querySelector(".waves .wave")
+      .style.setProperty("--hue-color", theme.id);
+    let url = `url(/assets/img/waves/wave_${theme.id}.png)`;
+    $(".waves .wave").css("background", url);
+
     themeContent.classList.toggle("active");
   });
 });
