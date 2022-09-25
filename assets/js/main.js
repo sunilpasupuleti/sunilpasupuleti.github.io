@@ -102,37 +102,42 @@ document.addEventListener("mouseout", () => {
   cursor.style.display = "none";
 });
 
-document.onreadystatechange = () => {
-  if (document.readyState == "interactive") {
-    var elem = document.getElementById("onload-fill");
-    var width = 5;
-    id = setInterval(frame, 50);
-    function frame() {
-      if (width >= 100) {
-        // clearInterval(id);
-        width = 0;
-        // id = setInterval(frame, 30);
-      } else {
-        width++;
-        elem.style.width = width + "%";
-      }
-    }
-  }
-  if (document.readyState === "complete") {
-    clearInterval(id);
-    $(".onloading").fadeOut();
-    $(".footer").fadeIn();
-    $(".header").fadeIn();
-    $(".main").fadeIn();
+// setTimeout(() => {
+//   $(".onloading").fadeOut();
+//   $(".footer,.header,.main").fadeIn();
+// }, 1000);
 
-    if (window.location.hash) {
-      const ele = document.querySelector(window.location.hash);
-      setTimeout(() => {
-        ele.scrollIntoView();
-      }, 100);
-    }
-  }
-};
+// document.onreadystatechange = () => {
+//   if (document.readyState == "interactive") {
+//     var elem = document.getElementById("onload-fill");
+//     var width = 5;
+//     id = setInterval(frame, 50);
+//     function frame() {
+//       if (width >= 100) {
+//         // clearInterval(id);
+//         width = 0;
+//         // id = setInterval(frame, 30);
+//       } else {
+//         width++;
+//         elem.style.width = width + "%";
+//       }
+//     }
+//   }
+//   if (document.readyState === "complete") {
+//     clearInterval(id);
+//     $(".onloading").fadeOut();
+//     $(".header").fadeIn();
+//     $(".footer").fadeIn();
+//     $(".main").fadeIn();
+
+//     if (window.location.hash) {
+//       const ele = document.querySelector(window.location.hash);
+//       setTimeout(() => {
+//         ele.scrollIntoView();
+//       }, 100);
+//     }
+//   }
+// };
 
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -464,7 +469,7 @@ async function sendMessage(e) {
     toname: name,
     subject: "Reply from WebWizard",
     message:
-      "<h3>Thanks for spending your valuable time by going through my portfolio . Thank you for contacting me 😊 ! I will reach you out soon 😉 ! Any emergencey you can contact me at +91995990740 </h3>",
+      "<h3>Thanks for spending your valuable time by going through my portfolio . Thank you for contacting me 😊 ! I will reach you out soon 😉 ! Any emergency you can contact me at +91995990740 </h3>",
     adminemail: "sunil@webwizard.in",
     adminsubject: "Message from your portfolio",
     adminmessage: `

@@ -73,6 +73,11 @@
   }
 }
 
+::selection {
+  color: #fff;
+  background: var(--first-color);
+}
+
 /* variables for dark theme */
 
 body.dark-theme {
@@ -143,7 +148,8 @@ a {
 .main,
 .header,
 .footer {
-  display: none;
+  /* display: none; */
+  /* display: block; */
 }
 
 /* cursor animation */
@@ -190,6 +196,7 @@ a {
 
 .onloading {
   pointer-events: none;
+  display: none;
 }
 
 .onload-text {
@@ -709,6 +716,8 @@ img {
 
 .about__img {
   width: 200px;
+  height: 400px;
+  object-fit: cover;
   border-radius: 0.5rem;
   justify-self: center;
   align-self: center;
@@ -1510,6 +1519,7 @@ img {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s ease-in;
+  /* display: none; */
 }
 
 .exp__modal-content {
@@ -1533,6 +1543,7 @@ body.dark-theme .exp__modal-close {
 }
 
 .modal__certificate {
+  /* display: none; */
   /* height: 400px; */
   padding: 1.5rem 2.1rem 1.5rem 1.5rem;
   height: 500px;
