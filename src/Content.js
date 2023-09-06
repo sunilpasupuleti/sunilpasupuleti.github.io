@@ -35,6 +35,7 @@ import migration from "./assets/images/Services/migration.png";
 import testing from "./assets/images/Services/testing.png";
 
 import project_ecommerce from "./assets/images/Projects/ecommerce.mp4";
+import project_portfolio from "./assets/images/Projects/portfolio.mp4";
 import project_vms from "./assets/images/Projects/vms.mp4";
 import project_stopwatch from "./assets/images/Projects/stopwatch.mp4";
 import project_fruitslice from "./assets/images/Projects/slice.mp4";
@@ -630,6 +631,15 @@ export const content = {
           "MEAN Stack e-commerce: Payments, OTP, Admin Panel, Subscriptions, Coupons, Categories, COD, & more for a versatile shopping experience",
         demoUrl: "https://ecommerce.webwizard.in",
       },
+      {
+        title: "Responsive Portfolio",
+        type: "video",
+        url: project_portfolio,
+        description:
+          "Discover my responsive portfolio, a fusion of design and functionality. Explore web creations that adapt gracefully to any screen size.",
+        demoUrl: "https://old.webwizard.in",
+      },
+
       {
         title: "Visitor Management System",
         type: "video",
