@@ -128,7 +128,7 @@ export const content = {
     title: "Full Stack Developer",
     firstName: "PASUPULETI",
     LastName: "SUNIL",
-    cvLink: "https://webwizard.in/assets/pdf/Sunil-Cv.pdf",
+    cvLink: "https://webwizard.in/Sunil-Cv.pdf",
     btnText: "Download CV",
     btnIcon: MdDownload,
     images: [Hero_person, Hero_person1],
