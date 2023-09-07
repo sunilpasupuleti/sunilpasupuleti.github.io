@@ -136,7 +136,7 @@ export const content = {
     hero_content: [
       {
         count: "4+",
-        text: "Years of Experinse in Web/App development",
+        text: "Years of Experience in Web/App development",
       },
       {
         count: "20+",
@@ -308,7 +308,7 @@ export const content = {
         content: [
           {
             title: "App Developer",
-            para: "GREEN DEUMBELLS - Intern",
+            para: "GREEN DUMBELLS - Intern",
             period: "Present",
             icon: HiBriefcase,
           },
