@@ -60,7 +60,7 @@ const Hero = () => {
           <h1 className="rotate-90 absolute md:top-[40%] top-[20%] right-[-15%] text-[#EAF2FA]">
             {hero.firstName}{" "}
             <span className="text-dark_primary dark:text-dark_primary">
-              {hero.LastName}
+              {hero.lastName}
             </span>
           </h1>
         </div>

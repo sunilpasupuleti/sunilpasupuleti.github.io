@@ -57,6 +57,7 @@ import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person1.png";
 
 import greendumbells from "./assets/images/Experiences/greendumbells.jpg";
+import datavalley from "./assets/images/Experiences/datavalley.jpg";
 import codegnan from "./assets/images/Experiences/codegnan.jpg";
 import firewires from "./assets/images/Experiences/firewires.jpg";
 import kaspertech from "./assets/images/Experiences/kaspertech.jpg";
@@ -128,7 +129,7 @@ export const content = {
   hero: {
     title: "Full Stack Developer",
     firstName: "PASUPULETI",
-    LastName: "SUNIL",
+    lastName: "SUNIL",
     cvLink: "https://webwizard.in/Sunil-Cv.pdf",
     btnText: "Download CV",
     btnIcon: MdDownload,
@@ -307,13 +308,19 @@ export const content = {
         icon: FaBriefcase,
         content: [
           {
-            title: "App Developer",
-            para: "GREEN DUMBELLS - Intern",
+            title: "Full Stack Developer",
+            para: "Datavalley.ai",
             period: "Present",
             icon: HiBriefcase,
           },
           {
-            title: "Track Tech Solutions",
+            title: "App Developer",
+            para: "GREEN DUMBELLS - Intern",
+            period: "4 Months",
+            icon: HiBriefcase,
+          },
+          {
+            title: "MEAN Stack Developer",
             para: "Trach Tech Solutions - Intern/Freelancing",
             period: "2 Years",
             icon: HiBriefcase,
@@ -325,8 +332,8 @@ export const content = {
             icon: HiBriefcase,
           },
           {
-            title: "Alhansat Technologies",
-            para: "Full Stack Engineer - Intern",
+            title: "Full Stack Engineer",
+            para: "Alhansat Technologies - Intern",
             period: "3 Months",
             icon: HiBriefcase,
           },
@@ -430,6 +437,24 @@ export const content = {
         ],
       },
       {
+        image: datavalley,
+        content: [
+          {
+            title: "Datavalley",
+            logo: GoOrganization,
+          },
+          {
+            title: "Full Stack Developer",
+            logo: BsPerson,
+          },
+          {
+            title: "Present",
+            logo: BiTime,
+          },
+        ],
+      },
+
+      {
         image: greendumbells,
         content: [
           {
@@ -441,7 +466,7 @@ export const content = {
             logo: BsPerson,
           },
           {
-            title: "Present",
+            title: "4 Months",
             logo: BiTime,
           },
         ],
@@ -692,7 +717,7 @@ export const content = {
     subtitle: "MY TOP CREATION",
     image: expenses,
     firstName: "Expenses",
-    LastName: "Manager",
+    lastName: "Manager",
     content: {
       description:
         "Seamlessly manage expenses with my Expenses Manager App - Simple and effortless! ",

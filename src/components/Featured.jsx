@@ -68,7 +68,7 @@ const Featured = () => {
           <h1 className="md:rotate-90 mt-20  text-[#EAF2FA]">
             {Featured.firstName} <br />
             <span className="text-dark_primary  dark:text-dark_primary">
-              {Featured.LastName}
+              {Featured.lastName}
             </span>
           </h1>
           <br />
