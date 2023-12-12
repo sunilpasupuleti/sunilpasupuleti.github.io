@@ -11,6 +11,9 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2
 
+      - name: Install sshpass
+        run: sudo apt-get update && sudo apt-get install -y sshpass
+
       - name: DEPLOY CODE TO VPS
         uses: appleboy/ssh-action@master
         with:
