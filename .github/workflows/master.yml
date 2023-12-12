@@ -2,7 +2,9 @@ on:
   push:
     branches:
       - master
+
 name: 🚀 Deploy to webwizard.in
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -16,7 +18,9 @@ jobs:
         with:
           host: ${{ secrets.HOST_NAME }}
           username: ${{ secrets.USER_NAME }}
-          password: ${{ secrets.PASS_WORD }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
           port: ${{ secrets.PORT }}
           script: |
+            mkdir -p /var/www/webwizard.in  # Create the target directory if it doesn't exist
             rsync -r --quiet $GITHUB_WORKSPACE/dist/ /var/www/webwizard.in
