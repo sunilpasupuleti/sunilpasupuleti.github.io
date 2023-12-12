@@ -19,5 +19,4 @@ jobs:
           password: ${{secrets.PASS_WORD}}
           port: ${{secrets.PORT}}
           script: |
-            mkdir -p /var/www/webwizard.in
-            rsync -r --quiet $GITHUB_WORKSPACE/dist/ ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }}:/var/www/webwizard.in
+            sshpass -p "${{ secrets.PASS_WORD }}" rsync -r --quiet $GITHUB_WORKSPACE/dist/ ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }}:/var/www/webwizard.in
