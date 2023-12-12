@@ -13,15 +13,10 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2
 
-      - name: List files in dist
-        run: ls -R $GITHUB_WORKSPACE/dist
-
       - name: DEPLOY CODE TO VPS
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST_NAME }}
-          username: ${{ secrets.USER_NAME }}
-          password: ${{ secrets.PASS_WORD }}
-          port: ${{ secrets.PORT }}
-          script: |
-            rsync -r --quiet $GITHUB_WORKSPACE/dist/ /var/www/webwizard.in
+        run: |
+          echo "${{ secrets.PASS_WORD }}" | scp -r -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -P ${{ secrets.PORT }} $GITHUB_WORKSPACE/dist/* ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }}:/var/www/webwizard.in
+        env:
+          USER_NAME: ${{ secrets.USER_NAME }}
+          HOST_NAME: ${{ secrets.HOST_NAME }}
+          PORT: ${{ secrets.PORT }}
