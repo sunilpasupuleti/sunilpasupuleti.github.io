@@ -14,10 +14,10 @@ jobs:
       - name: DEPLOY CODE TO VPS
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST_NAME }}
-          username: ${{ secrets.USER_NAME }}
-          password: ${{ secrets.PASS_WORD }}
-          port: ${{ secrets.PORT }}
+          host: ${{secrets.HOST_NAME}}
+          username: ${{secrets.USER_NAME}}
+          password: ${{secrets.PASS_WORD}}
+          port: ${{secrets.PORT}}
           script: |
             mkdir -p /var/www/webwizard.in
             rsync -r --quiet $GITHUB_WORKSPACE/dist/ ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }}:/var/www/webwizard.in
