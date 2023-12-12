@@ -1,17 +1,17 @@
-  on:
-    push:
-      branches:
-        - master
-  name: 🚀 Deploy website on webwizard.in
-  jobs:
-    web-deploy:
-      name: 🎉 Deploy
-      runs-on: ubuntu-latest
-      steps:
-        - name: 🚚 Get latest code
-          uses: actions/checkout@v2
+on:
+  push:
+    branches:
+      - master
+name: 🚀 Deploy website on webwizard.in
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
 
-        - name: DEPLOY CODE TO VPS
+      - name: DEPLOY CODE TO VPS
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST_NAME }}
