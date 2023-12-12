@@ -18,5 +18,5 @@ jobs:
           username: ${{ secrets.USER_NAME }}
           password: ${{ secrets.PASS_WORD }}
           port: ${{ secrets.PORT }}
-          source: ./dist/
+          source: ./dist*
           target: /var/www/webwizard.in
