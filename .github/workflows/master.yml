@@ -2,9 +2,7 @@ on:
   push:
     branches:
       - master
-
-name: 🚀 Deploy to webwizard.in
-
+name: 🚀 Deploy website on webwizard.in
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -13,11 +11,12 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2
 
-      - name: Set up SSH key
-        run: echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
-
       - name: DEPLOY CODE TO VPS
-        run: rsync -r -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --quiet $GITHUB_WORKSPACE/dist/ ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }}:/var/www/webwizard.in
-        env:
-          USER_NAME: ${{ secrets.USER_NAME }}
-          HOST_NAME: ${{ secrets.HOST_NAME }}
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST_NAME }}
+          username: ${{ secrets.USER_NAME }}
+          password: ${{ secrets.PASS_WORD }}
+          port: ${{ secrets.PORT }}
+          source: ./dist/*
+          target: /var/www/resume.webwizard.in
