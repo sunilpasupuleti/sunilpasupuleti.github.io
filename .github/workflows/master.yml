@@ -19,4 +19,4 @@ jobs:
           password: ${{ secrets.PASS_WORD }}
           port: ${{ secrets.PORT }}
           source: ./dist/*
-          target: /var/www/resume.webwizard.in
+          target: /var/www/webwizard.in
