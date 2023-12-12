@@ -18,8 +18,7 @@ jobs:
         with:
           host: ${{ secrets.HOST_NAME }}
           username: ${{ secrets.USER_NAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          password: ${{ secrets.PASS_WORD }}
           port: ${{ secrets.PORT }}
           script: |
             mkdir -p /var/www/webwizard.in  # Create the target directory if it doesn't exist
