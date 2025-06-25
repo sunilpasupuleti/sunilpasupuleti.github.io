@@ -17,6 +17,10 @@ import expressjs from "./assets/images/Skills/expressjs.png";
 import firebase from "./assets/images/Skills/firebase.png";
 import mongo from "./assets/images/Skills/mongodb.png";
 import mysql from "./assets/images/Skills/mysql.png";
+import docker from "./assets/images/Skills/docker.png";
+import devops from "./assets/images/Skills/devops.png";
+import aws from "./assets/images/Skills/aws.png";
+import typescript from "./assets/images/Skills/typescript.png";
 
 import web_dev from "./assets/images/Services/web_development.png";
 import app_dev from "./assets/images/Services/app_development.png";
@@ -136,7 +140,7 @@ export const content = {
     images: [Hero_person, Hero_person1],
     hero_content: [
       {
-        count: "4+",
+        count: "5+",
         text: "Years of Experience in Web/App development",
       },
       {
@@ -144,7 +148,7 @@ export const content = {
         text: "Projects Worked in my career",
       },
       {
-        count: "5+",
+        count: "8+",
         text: "Companies worked for",
       },
     ],
@@ -212,6 +216,22 @@ export const content = {
       },
       {
         name: "MySQL",
+        logo: mysql,
+      },
+      {
+        name: "AWS",
+        logo: aws,
+      },
+      {
+        name: "Docker",
+        logo: docker,
+      },
+      {
+        name: "devops",
+        logo: devops,
+      },
+      {
+        name: "typescript",
         logo: mysql,
       },
     ],
@@ -308,76 +328,82 @@ export const content = {
         icon: FaBriefcase,
         content: [
           {
-            title: "Full Stack Developer",
-            para: "Datavalley.ai",
-            period: "Present",
+            title: "Founder (Sole Proprietor)",
+            para: "Webwizard",
+            period: "01/2023 - Present",
+            icon: HiBriefcase,
+          },
+          {
+            title: "Full Stack Developer & Cloud Engineer",
+            para: "Datavalley.ai - Full Time",
+            period: "10/2023 - 03/2024",
             icon: HiBriefcase,
           },
           {
             title: "App Developer",
-            para: "GREEN DUMBELLS - Intern",
-            period: "4 Months",
+            para: "Green Dumbells - Intern",
+            period: "06/2023 - 10/2023",
             icon: HiBriefcase,
           },
           {
-            title: "MEAN Stack Developer",
-            para: "Trach Tech Solutions - Intern/Freelancing",
-            period: "2 Years",
+            title: "Full Stack Developer & DevOps Engineer",
+            para: "Codegnan IT Solutions Pvt Ltd - Full Time",
+            period: "05/2023 - 07/2023",
+            icon: HiBriefcase,
+          },
+          {
+            title: "Associate Software Engineer",
+            para: "Firewires Solutions - Intern",
+            period: "10/2022 - 12/2022",
+            icon: HiBriefcase,
+          },
+          {
+            title: "MERN Stack Developer ",
+            para: "Kasper Tech - Intern",
+            period: "08/2022 - 09/2022",
+            icon: HiBriefcase,
+          },
+          {
+            title: "UI/UX Developer",
+            para: "FIRM.DEV - Intern",
+            period: "08/2022 - 09/2022",
+            icon: HiBriefcase,
+          },
+          {
+            title: "Full Stack Developer",
+            para: "Trach Tech Solutions - Full Time",
+            period: "12/2021 - 11/2022",
             icon: HiBriefcase,
           },
           {
             title: "Full Stack Developer",
             para: "Urbn Mnky - Intern",
-            period: "6 Months",
+            period: "05/2021 - 03/2022",
+            icon: HiBriefcase,
+          },
+          {
+            title: "Full Stack Developer",
+            para: "Zypher - (Freelance + Intern)",
+            period: "09/2021 - 12/2021",
+            icon: HiBriefcase,
+          },
+
+          {
+            title: "Frontend Developer",
+            para: "Blobcity - Intern",
+            period: "09/2021 - 11/2021",
             icon: HiBriefcase,
           },
           {
             title: "Full Stack Engineer",
             para: "Alhansat Technologies - Intern",
-            period: "3 Months",
-            icon: HiBriefcase,
-          },
-          {
-            title: "Backend Developer",
-            para: "Firewires Solutions - Intern",
-            period: "2 Months",
+            period: "07/2021 - 10/2021",
             icon: HiBriefcase,
           },
           {
             title: "Backend Developer",
             para: "Altruism Labs - Intern",
-            period: "2 Months",
-            icon: HiBriefcase,
-          },
-          {
-            title: "UI Developer",
-            para: "Blobcity - Intern",
-            period: "1 Month",
-            icon: HiBriefcase,
-          },
-          {
-            title: "Full Stack Developer",
-            para: "CodeGnan IT Solutions Pvt Ltd- Full Time",
-            period: "1 Month",
-            icon: HiBriefcase,
-          },
-
-          {
-            title: "Full Stack Developer",
-            para: "Firm.Dev - Intern",
-            period: "1 Month",
-            icon: HiBriefcase,
-          },
-          {
-            title: "Full Stack Developer",
-            para: "Kasper Tech - Intern",
-            period: "1 Month",
-            icon: HiBriefcase,
-          },
-          {
-            title: "Full Stack Developer",
-            para: "Zypher - Freelancer",
-            period: "2 Month",
+            period: "05/2021 - 08/2021",
             icon: HiBriefcase,
           },
         ],
@@ -388,20 +414,26 @@ export const content = {
         icon: FaUserGraduate,
         content: [
           {
+            title: "Master's in Web Development",
+            para: "Conestoga College Institute of Technology and Advanced Learning - Canada",
+            period: "2023-2025",
+            icon: RiGraduationCapFill,
+          },
+          {
             title: "B.TECH in Information Technology",
-            para: "Dhanekula Institute of Engineering & Technology",
+            para: "Dhanekula Institute of Engineering & Technology - India",
             period: "2019-2023",
             icon: RiGraduationCapFill,
           },
           {
             title: "12th Standard",
-            para: "Narayana Junior College",
+            para: "Narayana Junior College - India",
             period: "2017-2019",
             icon: RiGraduationCapFill,
           },
           {
             title: "10th Standard",
-            para: "Nirmala High School",
+            para: "Nirmala High School - India",
             period: "2016-2017",
             icon: RiGraduationCapFill,
           },
@@ -717,12 +749,12 @@ export const content = {
     subtitle: "MY TOP CREATION",
     image: expenses,
     firstName: "Expenses",
-    lastName: "Manager",
+    lastName: "Aura",
     content: {
       description:
-        "Seamlessly manage expenses with my Expenses Manager App - Simple and effortless! ",
+        "Seamlessly manage expenses with my Expenses Aura App - Simple and effortless! ",
       btnText: "VIEW NOW",
-      btnUrl: "https://expenses-manager.webwizard.in",
+      btnUrl: "https://expensesmanager.app",
       buttons: [
         {
           icon: play_store,
@@ -730,7 +762,7 @@ export const content = {
         },
         {
           icon: app_store,
-          url: "https://apps.apple.com/us/app/expenses-manager-by-webwizard/id6450874945",
+          url: "https://apps.apple.com/in/app/expenses-aura-track-smart/id6450874945",
         },
       ],
     },

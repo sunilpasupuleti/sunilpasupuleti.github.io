@@ -17,24 +17,24 @@ def print_with_gap_function(message):
     printCount+=1
 
 def main_function():
-    resume_template_root = root_path+"/Desktop/projects/portfolio\ and\ resume/resume-template/"
+    resume_template_root = root_path+"/Desktop/projects/portfolio and resume/resume-template/"
     resume_template_pdf_path = resume_template_root
     resume_template_pdf = resume_template_pdf_path+pdf_name
 
-    old_portfolio_root = root_path+"/Desktop/projects/portfolio\ and\ resume/old.webwizard.in/"
+    old_portfolio_root = root_path+"/Desktop/projects/portfolio and resume/old.webwizard.in/"
     old_portfolio_pdf_path = old_portfolio_root+"assets/pdf/"
     old_portfolio_pdf = old_portfolio_pdf_path+pdf_name
 
-    portfolio_root = root_path+"/Desktop/projects/portfolio\ and\ resume/webwizard.in/"
+    portfolio_root = root_path+"/Desktop/projects/portfolio and resume/webwizard.in/"
     portfolio_pdf_path = portfolio_root+"public/"
     portfolio_pdf = portfolio_pdf_path+pdf_name
 
 
-    certificates_root = root_path+"/Desktop/certificates/"
+    certificates_root = root_path+"/Downloads/Docs/sunil/"
     certificates_pdf_path = certificates_root
     certificates_pdf = certificates_pdf_path+pdf_name
 
-    icloud_drive_pdf_path = root_path+"/Library/Mobile\ Documents/com~apple~CloudDocs/Applications/"
+    icloud_drive_pdf_path = root_path+"/Library/Mobile Documents/com~apple~CloudDocs/Applications/"
     icloud_drive_pdf =  icloud_drive_pdf_path+pdf_name
 
     # Rename the file
